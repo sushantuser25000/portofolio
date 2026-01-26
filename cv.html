@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushant Singh - Resume</title>
+    <style>
+        @media print {
+            body {
+                margin: 0;
+                padding: 15px;
+                max-width: 100%;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+            }
+            
+            a {
+                text-decoration: none;
+                color: #000000;
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            color: #000000;
+            background: #ffffff;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 20px;
+            font-size: 10pt;
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 20pt;
+            color: #000000;
+            margin-bottom: 6px;
+            font-weight: 700;
+        }
+
+        .header .title {
+            font-size: 11pt;
+            color: #000000;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            font-size: 9pt;
+            color: #000000;
+        }
+
+        .contact-info a {
+            color: #000000;
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 18px;
+        }
+
+        .section-title {
+            font-size: 12pt;
+            color: #000000;
+            border-bottom: 1.5px solid #000000;
+            padding-bottom: 3px;
+            margin-bottom: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .summary {
+            color: #000000;
+            font-size: 10pt;
+            line-height: 1.5;
+        }
+
+        .experience-item, .education-item, .project-item {
+            margin-bottom: 12px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3px;
+        }
+
+        .item-title {
+            font-size: 11pt;
+            font-weight: 700;
+            color: #000000;
+        }
+
+        .item-date {
+            font-size: 9pt;
+            color: #000000;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .item-subtitle {
+            font-size: 10pt;
+            color: #000000;
+            margin-bottom: 5px;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .item-description {
+            color: #000000;
+            margin-left: 0;
+            line-height: 1.4;
+            font-size: 9.5pt;
+        }
+
+        .item-description li {
+            margin-bottom: 3px;
+            margin-left: 18px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .skill-category {
+            margin-bottom: 6px;
+        }
+
+        .skill-category-title {
+            font-weight: 700;
+            color: #000000;
+            margin-bottom: 3px;
+            font-size: 10pt;
+        }
+
+        .skill-items {
+            color: #000000;
+            line-height: 1.5;
+            font-size: 9.5pt;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 15px;
+            }
+
+            .header h1 {
+                font-size: 18pt;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 6px;
+            }
+
+            .item-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Sushant Singh</h1>
+        <div class="title">Computer Engineering Student | Web Developer</div>
+        <div class="contact-info">
+            <span>singhsushant079@gmail.com</span>
+            <span>Kathmandu, Nepal</span>
+            <a href="https://github.com/sushantuser25000" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/sushant-singh-34a2a9307/" target="_blank">LinkedIn</a>
+            <a href="https://x.com/singhsushant079" target="_blank">X (Twitter)</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Professional Summary</h2>
+        <p class="summary">
+            Passionate Computer Engineering student with a strong foundation in building web applications and emerging technologies. 
+            Specialized in creating responsive, user-friendly interfaces and robust backend systems. Experienced in blockchain 
+            technology and machine learning applications. Eager to apply theoretical knowledge to real-world problems and contribute 
+            to innovative technological solutions.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Education</h2>
+        
+        <div class="education-item">
+            <div class="item-header">
+                <div class="item-title">Bachelor of Engineering in Computer Engineering</div>
+                <div class="item-date">Present</div>
+            </div>
+            <div class="item-subtitle">Tribhuvan University, Kathmandu, Nepal</div>
+            <ul class="item-description">
+                <li>Relevant coursework: Data Structures, Algorithms, Web Development, Blockchain Technology, Machine Learning</li>
+                <li>Focus on full-stack development and emerging technologies</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Technical Skills</h2>
+        
+        <div class="skills-grid">
+            <div class="skill-category">
+                <div class="skill-category-title">Programming Languages</div>
+                <div class="skill-items">JavaScript, Python, Solidity, HTML5, CSS3</div>
+            </div>
+            
+            <div class="skill-category">
+                <div class="skill-category-title">Frontend Technologies</div>
+                <div class="skill-items">React.js, Responsive Design, Modern CSS</div>
+            </div>
+            
+            <div class="skill-category">
+                <div class="skill-category-title">Backend Technologies</div>
+                <div class="skill-items">Node.js, RESTful APIs</div>
+            </div>
+            
+            <div class="skill-category">
+                <div class="skill-category-title">Blockchain & Web3</div>
+                <div class="skill-items">Ethereum, Solidity, Smart Contracts</div>
+            </div>
+            
+            <div class="skill-category">
+                <div class="skill-category-title">AI/ML Technologies</div>
+                <div class="skill-items">TensorFlow, Deep Learning, CNN, Computer Vision</div>
+            </div>
+            
+            <div class="skill-category">
+                <div class="skill-category-title">Tools & Version Control</div>
+                <div class="skill-items">Git, GitHub, VS Code</div>
+            </div>
+            
+            <div class="skill-category">
+                <div class="skill-category-title">Languages</div>
+                <div class="skill-items">English, Nepali, Hindi, Maithili</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Projects</h2>
+        
+        <div class="project-item">
+            <div class="item-header">
+                <div class="item-title">Blockchain Document Verification</div>
+                <div class="item-date">2024</div>
+            </div>
+            <ul class="item-description">
+                <li>Developed a secure system using Ethereum blockchain to issue and verify tamper-proof documents</li>
+                <li>Implemented smart contracts in Solidity for decentralized document verification</li>
+                <li>Built responsive frontend using React for seamless user interaction</li>
+                <li>Created Node.js backend to interface with Ethereum blockchain</li>
+                <li>Ensures document authenticity and prevents fraud through cryptographic verification</li>
+                <li>Technologies: Solidity, Ethereum, React, Node.js, Web3.js</li>
+                <li>GitHub: https://github.com/sushantuser25000/blockchain-document-verification</li>
+            </ul>
+        </div>
+
+        <div class="project-item">
+            <div class="item-header">
+                <div class="item-title">Diabetic Retinopathy Detection</div>
+                <div class="item-date">2024</div>
+            </div>
+            <ul class="item-description">
+                <li>Developed a deep learning system to detect and classify diabetic retinopathy from retinal fundus images</li>
+                <li>Implemented Convolutional Neural Network (CNN) architecture for medical image analysis</li>
+                <li>Trained model to classify severity levels of diabetic retinopathy</li>
+                <li>Utilized transfer learning techniques to improve model accuracy</li>
+                <li>Designed to assist medical professionals in early detection and diagnosis</li>
+                <li>Technologies: Python, TensorFlow, Deep Learning, CNN, Computer Vision</li>
+            </ul>
+        </div>
+
+        <div class="project-item">
+            <div class="item-header">
+                <div class="item-title">Personal Portfolio Website</div>
+                <div class="item-date">2024</div>
+            </div>
+            <ul class="item-description">
+                <li>Designed and developed responsive portfolio website showcasing projects and skills</li>
+                <li>Implemented modern UI/UX principles with smooth animations and transitions</li>
+                <li>Utilized semantic HTML5, CSS3, and JavaScript for optimal performance</li>
+                <li>Deployed on GitHub Pages for public access</li>
+                <li>Technologies: HTML5, CSS3, JavaScript, Responsive Design</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Areas of Interest</h2>
+        
+        <ul class="item-description">
+            <li><strong>Blockchain Technology:</strong> Smart contracts, decentralized applications, Web3 development</li>
+            <li><strong>Machine Learning:</strong> Computer vision, deep learning, medical image analysis</li>
+            <li><strong>Web Development:</strong> Full-stack development, responsive design, modern frameworks</li>
+            <li><strong>Open Source:</strong> Contributing to open-source projects and collaborative development</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">Additional Information</h2>
+        
+        <ul class="item-description">
+            <li>Active learner exploring new technologies and development practices</li>
+            <li>Experience with modern development workflows and version control</li>
+            <li>Strong foundation in clean code principles and user experience design</li>
+            <li>Multilingual: Fluent in English, Nepali, Hindi, and Maithili</li>
+        </ul>
+    </div>
+
+</body>
+</html>
